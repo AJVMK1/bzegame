@@ -1,0 +1,85 @@
+/* === Base Styling === */
+body {
+  background: radial-gradient(circle at top, #111 0%, #000 100%);
+  min-height: 100vh;
+}
+
+/* === Custom Button Styling === */
+.custom-btn {
+  border: 2px solid gold;
+  color: gold;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* === Gold Shimmer Effect === */
+.custom-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 215, 0, 0.6),
+    transparent
+  );
+  transform: skewX(-20deg);
+}
+
+.custom-btn:hover::before {
+  animation: shimmer 0.75s forwards;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 125%;
+  }
+}
+
+/* === Hover Effects === */
+.custom-btn:hover {
+  background-color: gold;
+  color: black;
+  box-shadow: 0 0 25px gold;
+}
+
+/* === Focus Effects === */
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0 0 15px gold;
+}
+
+/* === Scrolling Title Animation === */
+.scrolling-title {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: gold;
+  position: relative;
+  width: 100%;
+}
+
+.scrolling-title span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
