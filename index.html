@@ -19,14 +19,36 @@
 
     <img id="myImage" src="Belize.png" alt="District Map" class="img-fluid rounded shadow mb-4" style="max-width: 400px;">
 
-    <div class="d-grid gap-3 col-6 mx-auto">
-      <button class="btn btn-dark custom-btn" onclick="document.getElementById('myImage').src='Cor.png'">Corozal</button>
-      <button class="btn btn-dark custom-btn" onclick="document.getElementById('myImage').src='O.png'">Orange Walk</button>
-     <button class="btn btn-dark custom-btn" onclick="document.getElementById('myImage').src='C.png'">Cayo</button>
-      <button class="btn btn-dark custom-btn" onclick="document.getElementById('myImage').src='B.png'">Belize</button>
-      <button class="btn btn-dark custom-btn" onclick="document.getElementById('myImage').src='S.png'">Stann Creek</button>
-      <button class="btn btn-dark custom-btn" onclick="document.getElementById('myImage').src='pg.png'">Punta Gorda</button>
-      <button class="btn btn-outline-warning custom-btn" onclick="document.getElementById('myImage').src='Belize.png'">Reset</button>
+    <!-- Two Rows of 3 Buttons -->
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-md-4">
+        <button class="btn btn-dark custom-btn w-100" onclick="document.getElementById('myImage').src='Cor.png'">Corozal</button>
+      </div>
+      <div class="col-6 col-md-4">
+        <button class="btn btn-dark custom-btn w-100" onclick="document.getElementById('myImage').src='O.png'">Orange Walk</button>
+      </div>
+      <div class="col-6 col-md-4">
+        <button class="btn btn-dark custom-btn w-100" onclick="document.getElementById('myImage').src='C.png'">Cayo</button>
+      </div>
+    </div>
+
+    <div class="row g-3 justify-content-center mt-2">
+      <div class="col-6 col-md-4">
+        <button class="btn btn-dark custom-btn w-100" onclick="document.getElementById('myImage').src='B.png'">Belize</button>
+      </div>
+      <div class="col-6 col-md-4">
+        <button class="btn btn-dark custom-btn w-100" onclick="document.getElementById('myImage').src='S.png'">Stann Creek</button>
+      </div>
+      <div class="col-6 col-md-4">
+        <button class="btn btn-dark custom-btn w-100" onclick="document.getElementById('myImage').src='pg.png'">Punta Gorda</button>
+      </div>
+    </div>
+
+    <!-- Reset Button Below -->
+    <div class="row mt-4">
+      <div class="col-md-6 mx-auto">
+        <button class="btn btn-outline-warning custom-btn w-100" onclick="document.getElementById('myImage').src='Belize.png'">Reset</button>
+      </div>
     </div>
   </div>
 
